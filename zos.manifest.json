@@ -1,0 +1,14 @@
+{
+  "id": "ai.hanzo.finder",
+  "name": "Finder",
+  "version": "4.2.0",
+  "description": "File manager with sidebar navigation and quick look",
+  "icon": "📁",
+  "category": "system",
+  "author": "Hanzo AI",
+  "repository": "https://github.com/zos-apps/finder",
+  "minSdkVersion": "4.0.0",
+  "permissions": ["filesystem"],
+  "main": "src/index.tsx",
+  "installable": true
+}
