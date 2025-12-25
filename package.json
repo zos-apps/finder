@@ -2,6 +2,7 @@
   "name": "@zos-apps/finder",
   "version": "4.2.0",
   "description": "File manager with sidebar navigation and quick look",
+  "homepage": "https://zos-apps.github.io/finder",
   "main": "src/index.tsx",
   "types": "src/index.tsx",
   "files": ["src"],
@@ -11,18 +12,35 @@
     "icon": "📁",
     "category": "system",
     "permissions": ["filesystem"],
-    "installable": true
+    "installable": true,
+    "shortcut": "Cmd+F",
+    "menu": {
+      "help": {
+        "documentation": "https://zos-apps.github.io/finder",
+        "reportIssue": "https://github.com/zos-apps/finder/issues"
+      }
+    },
+    "contextMenu": [
+      {"label": "Open", "action": "open"},
+      {"label": "Open in New Window", "action": "openNew"},
+      {"type": "separator"},
+      {"label": "Get Info", "action": "getInfo"},
+      {"label": "Show in Finder", "action": "showInFinder"}
+    ]
   },
   "peerDependencies": {
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "lucide-react": ">=0.300.0"
   },
-  "keywords": ["zos", "app", "finder"],
+  "keywords": ["zos", "app", "finder", "macos", "desktop"],
   "author": "Hanzo AI",
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/zos-apps/finder.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zos-apps/finder/issues"
   }
 }
