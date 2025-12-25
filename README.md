@@ -13,10 +13,27 @@ npm install github:zos-apps/finder
 ## Usage
 
 ```tsx
-import ZFinder from '@zos-apps/finder';
+import App from '@zos-apps/finder';
 
-function App() {
-  return <ZFinder />;
+function MyApp() {
+  return <App />;
+}
+```
+
+## Package Spec
+
+App metadata is defined in `package.json` under the `zos` field:
+
+```json
+{
+  "zos": {
+    "id": "ai.hanzo.finder",
+    "name": "Finder",
+    "icon": "📁",
+    "category": "system",
+    "permissions": ["filesystem"],
+    "installable": true
+  }
 }
 ```
 

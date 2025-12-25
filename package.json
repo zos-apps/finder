@@ -5,6 +5,14 @@
   "main": "src/index.tsx",
   "types": "src/index.tsx",
   "files": ["src"],
+  "zos": {
+    "id": "ai.hanzo.finder",
+    "name": "Finder",
+    "icon": "📁",
+    "category": "system",
+    "permissions": ["filesystem"],
+    "installable": true
+  },
   "peerDependencies": {
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
