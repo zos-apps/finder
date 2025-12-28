@@ -1,0 +1,77 @@
+{
+  "name": "@zos-apps/finder",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "zos": {
+    "id": "ai.hanzo.finder",
+    "name": "Finder",
+    "icon": "📁",
+    "category": "system",
+    "description": "File manager and browser",
+    "permissions": [],
+    "window": {
+      "defaultSize": {
+        "width": 800,
+        "height": 500
+      },
+      "resizable": true
+    },
+    "about": "File manager and browser",
+    "screenshots": {
+      "hero": "screenshots/hero.png",
+      "images": [
+        "screenshots/1-main.png"
+      ]
+    },
+    "downloads": {
+      "web": "https://zos-apps.github.io/finder"
+    },
+    "featured": false,
+    "tags": [
+      "system",
+      "finder"
+    ],
+    "releaseDate": "2025-12-28",
+    "support": "https://github.com/zos-apps/finder/issues",
+    "changelog": "https://github.com/zos-apps/finder/releases"
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.0",
+    "@types/react-dom": "^18.3.0",
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.2"
+  },
+  "description": "File manager and browser",
+  "homepage": "https://zos-apps.github.io/finder",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zos-apps/finder.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zos-apps/finder/issues"
+  },
+  "author": "Hanzo AI",
+  "license": "MIT",
+  "keywords": [
+    "zos",
+    "app",
+    "finder",
+    "macos",
+    "desktop"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
+}
