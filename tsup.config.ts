@@ -1,9 +1,3 @@
-import { defineConfig } from 'tsup';
+import { createConfig } from '@zos-apps/config/tsup';
 
-export default defineConfig({
-  entry: ['src/index.tsx'],
-  format: ['esm'],
-  dts: true,
-  clean: true,
-  external: ['react', 'react-dom'],
-});
+export default createConfig();
