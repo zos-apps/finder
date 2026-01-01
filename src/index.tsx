@@ -1,11 +1,11 @@
-import React from 'react';
+import { useState, type FC } from 'react';
 import { Folder, File, HardDrive, Image, Music, Video, Download, Trash2, ChevronRight, Search } from 'lucide-react';
 
 interface FinderProps {
   onClose: () => void;}
 
-const Finder: React.FC<FinderProps> = ({ onClose }) => {
-  const [selectedItem, setSelectedItem] = React.useState<string | null>(null);
+const Finder: FC<FinderProps> = ({ onClose: _onClose }) => {
+  const [selectedItem, setSelectedItem] = useState<string | null>(null);
 
   const sidebarItems = [
     { id: 'favorites', label: 'Favorites', icon: null, isHeader: true },
